@@ -1,0 +1,153 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="number.css">
+  <title>Document</title>
+</head>
+<body>
+  <input type="text" id="input">
+ 
+  <buuton onclick="convertNumber()">convertNumber</buuton> 
+  <br>
+
+   <div>
+    <input type="text"  id="input2">
+   <input type="text"  id="input3">
+  <button onclick= "addition()"> add </button>
+   </div>
+</body>
+
+<script>
+   function convertNumber() {
+    let inputField = document.getElementById("input");
+    +(inputField.value);
+    let multpication =inputField.value * 2;
+    console.log(multpication);
+   let total = inputField.value * 2;
+   console.log(total);
+  }
+
+  function addition(){
+    let inputField = document.getElementById("input2" ) + document.getElementById("input3");
+    let addition = inputField.value + inputField.value;
+    console.log(addition);
+    let total = Number
+    console.log(total);
+    
+  }
+  
+  </script>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="number.css">
+  <title>Calculator</title>
+</head>
+<body>
+<div class="calculator">
+  
+    <h1>This is my calculator</h1>
+  <input type="text" id="input">
+  <button onclick="convertNumber()">convertNumber</button>
+  <br>
+
+  <div  class="add">
+    <div>
+      <input type="text" id="input2">
+    <input type="text" id="input3">
+    <button onclick="addition()">addition</button>
+  </div>
+    
+    <div><p id="additionResult"></p></div>
+  
+  </div>
+
+
+  <div class="sub">
+      <div><input type="text" id="input4">
+    <input type="text"  id="input5">
+  <button onclick="subtraction()">subtraction</button></div>
+     <div> <p id="subtractionResult"></p></div>                        
+  </div>
+  <div class="mul">
+   <div>
+     <input type="text" name="" id="input6">
+    <input type="text" name="" id="input7">
+    <button onclick="multiplication()">Multiply</button>
+   </div>
+   <div>
+     <p id="multiplyResult"></p>
+   </div>
+    
+  </div>
+  <div class="div">
+   <div> <input type= "text" name="" id="input8">
+    <input type= "text" name="" id="input9">
+    <button onclick="division()">divide</button></div>
+   <div> <p id="divideResult"></p></div>
+  </div>
+
+  
+</div>
+  </body>
+
+  <script>
+    function convertNumber() {
+      let inputField = document.getElementById("input");
+      let number = Number(inputField.value);
+      let result = number * 2;
+      console.log(result);
+    }
+
+    function addition() {
+      let num1 = Number(document.getElementById("input2").value);
+      let num2 = Number(document.getElementById("input3").value);
+      let total = num1 + num2;
+      console.log(total);
+      document.getElementById("additionResult").innerText = total;
+    }
+
+    function subtraction() {
+      let num3 = Number( document.getElementById("input4").value);
+      let num4 = Number( document.getElementById("input5").value);
+      let total = num3 - num4;
+      console.log(total);
+      document.getElementById("subtractionResult").innerText = total;
+      
+
+    }
+     function multiplication() {
+      let num5 = Number( document.getElementById("input6").value);
+      let num6 = Number( document.getElementById("input7").value);
+      let total = num5 * num6;
+      console.log(total);
+      document.getElementById("multiplyResult").innerText = total;
+
+    }
+     function division() {
+      let num7 = Number( document.getElementById("input8").value);
+      let num8 = Number( document.getElementById("input9").value);
+      let total = num7 / num8;
+      console.log(total);
+      document.getElementById("divideResult").innerText = total;
+
+    }
+
+    //  function subtraction() {
+    //   let num3 = Number( document.getElementById("input4").value);
+    //   let num4 = Number( document.getElementById("input5").value);
+    //   let total = num3 - num4;
+    //   console.log(total);
+    //   document.getElementById("additionResult").innerText = total;
+
+    // }
+
+  </script>
+
+</html>
